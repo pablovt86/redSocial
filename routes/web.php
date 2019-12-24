@@ -11,11 +11,20 @@
 |
 */
 
-// Route::get('/', function () {
+// Route::get('/home', function () {
 //     return view('welcome');
 // });
+Route::get('/home', function () {
+    return view('inicio');
+});
+
+Route::get('/index', function() {
+    return view('index');
+});
 
 Auth::routes();
 
+ Route::get('index', 'AdminController@admin');
+// Route::match(['get', 'post'], 'admin/createadmin', 'AdminController@createAdmin');
 Route::get('/', 'HomeController@index')->name('home');
 Route::resource('usuarios', 'UserController');

@@ -24,11 +24,11 @@ class UserController extends Controller
     {
 
       if ($request){
-          $query = trim($request->get('search'));
-      $users = User::where('name','LIKE', '%' .$query.'%')
+          $search = trim($request->get('search'));
+      $users = User::where('name','LIKE', '%' .$search.'%')
     ->orderBy('id','asc')
     ->paginate(5);
-    return view('usuarios.index',['users'=> $users,'search'=> $query]);
+    return view('usuarios.index',['users'=> $users,'search'=> $search]);
     }
     // $users = User::all();
     // return view('usuarios.index',['users'=>$users]);
