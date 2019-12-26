@@ -13,9 +13,16 @@
         </ul>
     </div>
 @endif
-  <form action="{{route('usuarios.update' , $user->id) }}" method="POST">
+  <form action="{{route('usuarios.update' , $user->id) }}"enctype="multipart/form-data" method="POST" >
     @method ('PATCH')
     @csrf
+
+      <label for="avatar"></label>
+        <img width ="100px" src="{{Storage::url($user->avatar)}}">
+      <input type="file"  name="avatar" >
+
+
+
   <div class="form-group">
     <label for="nombre">Nombre</label>
     <input type="text" class="form-control" name="name" value="{{$user->name}}" placeholder="escribe tu nombre">

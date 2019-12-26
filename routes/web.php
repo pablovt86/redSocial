@@ -25,6 +25,6 @@ Route::get('/index', function() {
 Auth::routes();
 
  Route::get('index', 'AdminController@admin');
-// Route::match(['get', 'post'], 'admin/createadmin', 'AdminController@createAdmin');
+ //Route::match(['get', 'post'], 'admin/createadmin', 'AdminController@createAdmin');
 Route::get('/', 'HomeController@index')->name('home');
 Route::resource('usuarios', 'UserController');

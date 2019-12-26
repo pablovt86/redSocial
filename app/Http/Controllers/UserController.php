@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+ use\App\Http\requests\UserUpdateRequest;
 use\App\Http\requests\UserFormRequest;
+
 use App\User;
 use Illuminate\Http\Request;
 class UserController extends Controller
@@ -56,6 +57,8 @@ class UserController extends Controller
         $usuario->name = request('name');
         $usuario->email = request('email');
         $usuario->password = request('password');
+        $usuario->avatar = $request->file('avatar')->store('public');
+
         $usuario->save();
         return redirect('/usuarios');
     }
@@ -89,12 +92,17 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UserFormRequest $request, $id)
+    public function update(UserUpdateRequest $request, $id)
     {
+
       $usuario = User::findOrFail($id);
+     
       $usuario->name = $request->get('name');
       $usuario->email = $request->get('email');
-
+     
+      if ($request->hasFile('avatar')) {
+        $usuario->avatar = $request->file('avatar')->store('public');
+      }
       $usuario->update();
       return redirect('/usuarios');
     }
