@@ -1,0 +1,166 @@
+*{
+margin: 15px 0;
+  box-sizing: border-box;
+}
+
+body{
+
+
+
+}
+.container{
+  max-width: 1180px;
+  margin:0 auto;
+}
+.logo{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15.25%;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.toggle-nav{
+  display: none;
+
+}
+.main-nav ul{
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+.main-nav ul li{
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.main-nav ul li{
+  background-color: #202020;
+  width: 15.25%;
+  height: 50px;
+  float: left;
+  margin-right: 1.69%;
+
+}
+.main-nav ul li:last-child{
+  margin-right: 0px;
+
+}
+.main-nav ul li a{
+  margin: 0;
+ padding-top: 15px;
+  width: 100%;
+  height: 100%;
+  display:block;
+  color:#FFFFFF;
+  text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+
+
+}
+
+.banner{
+
+  clear:both;
+}
+.banner img{
+  width: 100%;
+}
+.vip-product{
+  overflow: hidden;
+
+}
+.product{
+  width: 31.6%;
+  float: left;
+  margin: 1.27% 1.2%;
+
+}
+.product:nth-of-type(3n){
+  margin-right: 0;
+}
+.product:nth-of-type(3n-2){
+  margin-left: 0;
+
+}
+
+.product img{
+  width: 100%;
+
+}
+.main-footer{
+  background-color: #cc0000;
+  clear: both;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+.main-footer ul{
+  width: auto;
+  display: inline-block;
+  list-style: none;
+  overflow: hidden;
+  padding: 2.11% 50px;
+  text-align: center;
+  margin: auto;
+
+
+}
+.main-footer ul li{
+ float: left ;
+
+}
+.main-footer ul li a::after{
+  content: "|";
+  color: #ff6969;
+  margin: 0 2px;
+
+}
+.main-footer ul li:last-child a::after{
+  content: none;
+}
+.main-footer ul li a{
+  width: 100%;
+text-transform: capitalize;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: auto 0.847%;
+  text-align:center;
+
+
+
+}
+.product a{
+  margin: 0;
+  padding: 10px;
+  width: 30%;
+  height: 100%;
+  display:block;
+  background-color: black;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  color:#ffffff;
+
+}
+@media(max-width 760vw){
+  .footer{
+    max-width:100%;
+    clear:both;
+
+  }
+}
+@media(max-width 450vw){
+r{
+  max-width: 95%;
+  clear: both;
+}
+}

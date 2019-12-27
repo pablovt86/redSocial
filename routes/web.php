@@ -14,6 +14,15 @@
 // Route::get('/home', function () {
 //     return view('welcome');
 // });
+Route::get('/auth/register', function () {
+    return view('auth.register');
+    });
+Route::get('/auth/login', function () {
+    return view('inicio');
+    });
+Route::get('/Faqs', function () {
+    return view('Faqs');
+    });
 Route::get('/home', function () {
     return view('inicio');
 });

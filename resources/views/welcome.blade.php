@@ -10,62 +10,41 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+  >
     </head>
     <body>
-    
+      <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <!-- logo -->
+     <a class="navbar-brand" href="#">
+       <img src="images/joker.png" alt="Logo" style="width:40px;">
+     </a>
+
+     <!-- enlaces -->
+     <div class="collapse navbar-collapse" id ="opciones">
+       <ul class="navbar-nav">
+
+         <li class="nav-item">
+           <a class="nav-link" href="/index"><h3>Inicio</h3></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/register"><h3>Register</h3></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/login"><h3>Login</h3></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="/faqs"><h3>faqs</h3></a>
+         </li>
+       </ul>
+     </div>
+    </nav>
+
+    </header
 
 
         <div class="flex-center position-ref full-height">
