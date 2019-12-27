@@ -14,6 +14,10 @@
 // Route::get('/home', function () {
 //     return view('welcome');
 // });
+
+Route::get('/novedades', function () {
+    return view('noticias');
+    });
 Route::get('/auth/register', function () {
     return view('auth.register');
     });
