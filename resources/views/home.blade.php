@@ -12,8 +12,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                soy pablo
-                    You are logged in!
+                    <div class="">
+                      {{$user->email}}
+                      {{$user->id}}
+                      <img src="{{$user->avatar}}" alt="">
+                    </div>
+                Estas logueado {{$user->name}}
+
                 </div>
             </div>
         </div>

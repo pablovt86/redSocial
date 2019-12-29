@@ -15,25 +15,13 @@
 //     return view('welcome');
 // });
 
-Route::get('/novedades', function () {
-    return view('noticias');
-    });
-Route::get('/auth/register', function () {
-    return view('auth.register');
-    });
-Route::get('/auth/login', function () {
-    return view('inicio');
-    });
-Route::get('/Faqs', function () {
-    return view('Faqs');
-    });
 Route::get('/home', function () {
     return view('inicio');
 });
 
-Route::get('/index', function() {
-    return view('index');
-});
+// Route::get('/index', function() {
+//     return view('index');
+// });
 
 Auth::routes();
 
@@ -41,3 +29,16 @@ Auth::routes();
  //Route::match(['get', 'post'], 'admin/createadmin', 'AdminController@createAdmin');
 Route::get('/', 'HomeController@index')->name('home');
 Route::resource('usuarios', 'UserController');
+
+Route::get('/novedades', function () {
+    return view('noticias');
+    });
+Route::get('/auth/register', function () {
+    return view('auth.register');
+    });
+ // Route::get('/auth/login', function () {
+ //    return view('inicio');
+ //    });
+Route::get('/Faqs', function () {
+    return view('Faqs');
+    });

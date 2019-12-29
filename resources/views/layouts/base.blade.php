@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-  <header>
+  {{-- <header>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
    <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
  </div>
 </nav>
 
-</header>
+</header> --}}
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

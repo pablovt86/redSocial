@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('content')
 <div class="container">
@@ -6,10 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
-                <a class="nav-link" href="{{ route('register') }}">
-
-                registrate!!</a
-
+            
 
 
                 <div class="card-body">

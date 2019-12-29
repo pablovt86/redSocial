@@ -5,7 +5,10 @@ margin: 15px 0;
 
 body{
 
-  background-image: url("images/bg-body.png");
+  background-image: url("images/fondo-5.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
 
 }
 .container{
@@ -33,19 +36,22 @@ body{
   overflow: hidden;
   margin-bottom: 20px;
 
+
 }
 .main-nav ul li{
   padding: 0;
   list-style: none;
   overflow: hidden;
+    border-radius: 50%
 }
 
 .main-nav ul li{
-  background-color: #202020;
+  background-color: grey;
   width: 15.25%;
   height: 50px;
   float: left;
   margin-right: 1.69%;
+
 
 }
 .main-nav ul li:last-child{
@@ -69,7 +75,7 @@ body{
 .banner{
 
   clear:both;
-object-fit: cover
+
 }
 .banner img{
   width: 100%;
@@ -98,7 +104,7 @@ object-fit: cover
 
 }
 .main-footer{
-  background-color: #cc0000;
+  background-color: grey;
   clear: both;
   border-radius: 15px 15px 0 0;
   text-align: center;
@@ -145,7 +151,7 @@ text-transform: capitalize;
   width: 30%;
   height: 100%;
   display:block;
-  background-color: black;
+  background-color: grey;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -153,16 +159,21 @@ text-transform: capitalize;
   color:#ffffff;
 
 }
-@media(max-width 760vw){
-  .footer{
+@media screen (min-width: 760px) and (max-width:1024px){
+  .content, .footer{
     max-width:100%;
     clear:both;
 
   }
 }
-@media(max-width 450vw){
-r{
-  max-width: 95%;
+@media screen and (min-width:450px) and (max-width:760px){
+  .content, .footer{
+  max-width: 100%;
   clear: both;
 }
+}
+@media screen and (max-width:320px)  {
+  .content{
+    width: auto;
+  }
 }
