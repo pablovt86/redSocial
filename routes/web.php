@@ -11,17 +11,15 @@
 |
 */
 
-// Route::get('/home', function () {
-//     return view('welcome');
-// });
+;
 
 Route::get('/home', function () {
     return view('inicio');
 });
 
-// Route::get('/index', function() {
-//     return view('index');
-// });
+Route::get('/inicio', function() {
+    return view('welcome');
+});
 
 Auth::routes();
 

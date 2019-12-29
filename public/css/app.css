@@ -70,9 +70,12 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #212529;
+  color: #fff;
   text-align: left;
-  background-color: #f8fafc;
+  background-image: url("images/fondo-7.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  object-fit: cover;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -5227,7 +5230,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
+/* cambiar la tatrjeta de login y register */
 .card {
   position: relative;
   display: -webkit-box;
@@ -5237,7 +5240,7 @@ input[type=button].btn-block {
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color:#256d7b;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -5299,6 +5302,7 @@ input[type=button].btn-block {
 
 .card-header + .list-group .list-group-item:first-child {
   border-top: 0;
+
 }
 
 .card-footer {
@@ -11355,4 +11359,3 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
