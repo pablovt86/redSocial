@@ -89,12 +89,12 @@
 
 		<footer class="main-footer">
 			<ul>
-				<li><a href="#">home</a></li>
-				<li><a href="#">quienes</a></li>
-				<li><a href="#">servicios</a></li>
-				<li><a href="#">portfolio</a></li>
-				<li><a href="#">sucursales</a></li>
-				<li><a href="#">contacto</a></li>
+        <li><a href="#">paz</a></li>
+        <li><a href="#">vida</a></li>
+        <li><a href="#">armonia</a></li>
+        <li><a href="#">salud</a></li>
+        <li><a href="#">bienestar</a></li>
+        <li><a href="#">energia</a></li>
 			</ul>
 		</footer>
 	</div>

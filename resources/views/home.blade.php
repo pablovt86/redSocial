@@ -14,8 +14,7 @@
                     @endif
                     <div class="">
                       {{$user->email}}
-                      {{$user->id}}
-                      <img src="{{$user->avatar}}" alt="">
+                  
                     </div>
                 Estas logueado {{$user->name}}
 

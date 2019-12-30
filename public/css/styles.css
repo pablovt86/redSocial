@@ -159,6 +159,11 @@ text-transform: capitalize;
   color:#ffffff;
 
 }
+
+
+
+
+
 @media screen (min-width: 760px) and (max-width:1024px){
   .content, .footer{
     max-width:100%;

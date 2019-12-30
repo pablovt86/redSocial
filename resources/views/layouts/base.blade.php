@@ -20,42 +20,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-  {{-- <header>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
-   <span class="navbar-toggler-icon"></span>
- </button>
 
- <!-- logo -->
- <a class="navbar-brand" href="#">
-   <img src="images/joker.png" alt="Logo" style="width:40px;">
- </a>
-
- <!-- enlaces -->
- <div class="collapse navbar-collapse" id ="opciones">
-   <ul class="navbar-nav">
-
-     <li class="nav-item">
-       <a class="nav-link" href="/index"><h3>Inicio</h3></a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="/register"><h3>Register</h3></a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="/login"><h3>Login</h3></a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="/faqs"><h3>faqs</h3></a>
-     </li>
-   </ul>
- </div>
-</nav>
-
-</header> --}}
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/inicio') }}">
+                <a class="navbar-brand" href="{{ url('/index') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

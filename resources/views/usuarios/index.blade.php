@@ -2,12 +2,12 @@
 @section('content')
 
   <div class="container">
-        <h1>Bienvenid@ {{Auth::user()->name}} a su Panel de Administrador</h1>
-<h2>lista de usuarios registrados <a href="usuarios/create"><button type="button" class="btn btn-success float-right">agregar usuario</button></a></h2>
+        <h2 style="color:red">Bienvenid@ {{Auth::user()->name}} a su Panel de Administrador</h2>
+<h2 style="color:red">lista de usuarios registrados <a href="usuarios/create"><button type="button" class="btn btn-success float-right">agregar usuario</button></a></h2>
  <h6>
-   @if ($search)
+   @if ($search ?? '' ?? '')
   <div class="alert alert-primary" role="alert">
-     los resultados de tu busqueda '{{ $search }}'son:
+     los resultados de tu busqueda '{{ $search ?? '' ?? '' }}'son:
   </div>
      @endif
    </h6>

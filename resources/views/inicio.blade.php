@@ -1,4 +1,4 @@
 @extends('layouts.base')
 @section('content')
-  esto es el inicio aca hay que trabajar
+  <h1>aca trabajamos lo inicial del proyecto</h1>
 @endsection

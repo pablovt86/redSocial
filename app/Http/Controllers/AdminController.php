@@ -18,6 +18,7 @@ class AdminController extends Controller
   // A continuación crearemos un método privado que será el encargado de comprobar si el usuario autenticado es administrador o no.
   //  Este método luego será utilizado en cada una de las acciones del controlador. Código del método privado isAdmin() ...
     private function isAdmin(){
+
         if (Auth::user()->user == 1) return true;
         else return false;
     }
@@ -25,11 +26,16 @@ class AdminController extends Controller
 
   // El método anterior regresa un valor boolean. Si la columna "user" del usuario autenticado es igual 1 es que es administrador.
   //  Para ver la prueba crearemos una nueva acción-ruta llamada "admin" con el siguiente código ...
-    public function admin(){
+    public function admin(request $request){
         if ($this->isAdmin()){
-            return View('usuarios.index');
+
+              $search = trim($request->get('search'));
+          $users = User::where('name','LIKE', '%' .$search.'%')
+        ->orderBy('id','asc')
+        ->paginate(5);
+        return view('usuarios.index',['users'=> $users,'search'=> $search]);
         } else{
-            return redirect('/');
+            return redirect('/inicio');
         }
     }
 
