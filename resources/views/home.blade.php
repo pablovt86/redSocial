@@ -1,26 +1,34 @@
 @extends('layouts.base')
-  @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+@section('content')
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/master.css">
+    <title>perfil</title>
+  </head>
+  <body>
+  <main class"body">
+<section class="content">
+<div class="row">
+  <div class="col-sm-12">
+      <form action="{{route('home' , $user->id) }}"enctype="multipart/form-data" method="POST" >
+        @csrf
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    <div class="">
-                      {{$user->email}}
-                  
-                    </div>
-                Estas logueado {{$user->name}}
+    <label for="avatar"></label>
+      <img width ="100px" src="{{Storage::url($user->avatar)}}">
+     <input type="file"  name="avatar" >
+   </form>
+  </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-    @endsection
+
+
+</section>
+  </main>
+
+  </body>
+</html>
+
+
+@endsection

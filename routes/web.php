@@ -11,7 +11,7 @@
 |
 */
 
-;
+
 
 Route::get('/home', function () {
     return view('inicio');
@@ -27,7 +27,6 @@ Auth::routes();
  //Route::match(['get', 'post'], 'admin/createadmin', 'AdminController@createAdmin');
 Route::get('/', 'HomeController@index')->name('home');
 Route::resource('usuarios', 'UserController');
-
 Route::get('/novedades', function () {
     return view('noticias');
     });

@@ -35,7 +35,7 @@ class AdminController extends Controller
         ->paginate(5);
         return view('usuarios.index',['users'=> $users,'search'=> $search]);
         } else{
-            return redirect('/inicio');
+            return redirect('/home');
         }
     }
 
